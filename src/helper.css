@@ -1,0 +1,116 @@
+:root {
+  --bg-white: #f2f5f7;
+  --primary-color: #003580;
+  --primary-color-varaint: #1a4a8d;
+  --font-size-sm: 1.4em;
+  --font-size-lg: 3em;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-space-btw {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.padding-sm {
+  padding: 0.5rem;
+}
+
+.padding-md {
+  padding: 1rem;
+}
+
+.padding-md-2 {
+  padding: 1.25rem;
+}
+
+.padding-md-3 {
+  padding: 1.5rem;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.margin-left-3 {
+  margin-left: 3rem;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-color-white {
+  background-color: #fff;
+}
+
+.bg-color-blue {
+  background-color: rgba(6, 6, 48, 0.767);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.margin-block-end {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Component styles*/
+
+.btn {
+  border: 1px solid hsl(170, 100%, 49%);
+  outline: none;
+  background-color: #fff;
+  padding: 0.5rem;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.btn-header {
+  background-color: rgb(22, 22, 22);
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.65px;
+}
+.btn-header > span {
+  margin-left: 0.5rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-white);
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+  border-radius: 0.25rem;
+}

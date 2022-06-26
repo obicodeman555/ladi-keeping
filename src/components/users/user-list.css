@@ -1,0 +1,6 @@
+.selected > .btn {
+  background-color: rgb(57, 102, 224);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
