@@ -1,0 +1,17 @@
+.primary-white-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-white-button > button {
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--color-white);
+  outline: none;
+  font-size: var(--font-size-smx);
+  font-weight: bold;
+  min-height: 36px;
+  min-width: 36px;
+  color: var(--primary-color);
+  border-radius: 2px;
+}

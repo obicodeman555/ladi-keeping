@@ -1,6 +1,44 @@
-.selected > .btn {
-  background-color: rgb(57, 102, 224);
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.ladi-keeping__users-list-block > ul,
+.ladi-keeping__users-details {
+  background-color: var(--color-white);
+  box-shadow: var(--primary-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ladi-keeping__users-list-block > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.ladi-keeping__users-list-block > ul > li.selected > button {
+  background-color: var(--color-lavender);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.ladi-keeping__users-list-block > ul > li > button {
+  font-weight: 450;
+  padding: 15px;
+  font-size: var(--font-size-sm);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.ladi-keeping__users-details {
+  margin-left: var(--side-spacing-md-variant);
+}
+
+.ladi-keeping__users-details > .user-details__name,
+.ladi-keeping__users-details > .user-details__more-info {
+  padding: 15px;
+}
+
+.ladi-keeping__users-details > .user-details__more-info {
+  background-color: var(--color-lavender);
+}
+
+.ladi-keeping__users-details > .user-details__more-info > h4 {
+  margin-bottom: var(--side-spacing-md);
 }

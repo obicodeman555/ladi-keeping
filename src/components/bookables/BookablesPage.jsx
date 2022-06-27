@@ -1,12 +1,13 @@
 import React from "react";
 import BookablesList from "./BookablesList";
-
-import "./bkables.css";
+import "./bookables-page.css";
 
 const BookablesPage = () => {
   return (
-    <main className="bookables-page">
-      <BookablesList />
+    <main className="ladi-keeping__bookables-block">
+      <div className="container">
+        <BookablesList />
+      </div>
     </main>
   );
 };

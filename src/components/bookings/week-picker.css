@@ -1,0 +1,32 @@
+.datePicker {
+  margin-top: var(--top-spacing-sm);
+}
+
+.datePicker > div {
+  padding: var(--side-spacing-sm);
+  background-color: var(--color-white);
+  box-shadow: var(--primary-shadow);
+}
+
+.datePicker > div > span:first-child {
+  width: 65%;
+  font-size: var(--font-size-md);
+}
+
+.datePicker-button__block > button {
+  border: 1px solid transparent;
+  padding: 11px 15px;
+  font-size: var(--font-size-sm);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  box-shadow: var(--primary-shadow);
+}
+
+.datePicker-button__block > button:hover,
+.datePicker-button__block > button:focus {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--priamry-color-lighten);
+  transition: color, background-color, border-color 500ms ease-in;
+}

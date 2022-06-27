@@ -1,0 +1,70 @@
+.bookables-list__select-block {
+  border-bottom: 1.5px solid var(--color-lavender);
+}
+
+.bookables-list__select-block > select {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--transparent-white);
+  outline: none;
+  font-size: var(--font-size-smx);
+  font-weight: bold;
+  min-height: 36px;
+  min-width: 36px;
+  color: var(--text-blue);
+}
+
+.bookable-list > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookable-list > li.selected > button {
+  background-color: var(--color-lavender);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.bookable-list > li > button {
+  padding: 11px 15px;
+  font-size: var(--font-size-sm);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.bookables-list__group,
+.bookable-list__details {
+  background-color: var(--color-white);
+  box-shadow: var(--primary-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bookable-list__details {
+  margin-left: var(--side-spacing-md-variant);
+}
+
+.bookable-list__details__header,
+.bookable-list__details__content {
+  padding: 11px 15px;
+}
+
+.bookable-list__next-button,
+.bookables-list__select-block {
+  padding-top: var(--side-spacing-md-variant);
+  padding-bottom: var(--side-spacing-md);
+}
+
+.bookable-list__next-button > button {
+  padding: 8px 16px;
+  background-color: var(--color-lavender);
+  border: 0;
+  box-shadow: var(--primary-shadow);
+  border-radius: 999px;
+  font-weight: 450;
+}
+.bookable-list__next-button > button > span {
+  margin-right: var(--side-spacing-sm);
+  font-size: var(--font-size-sm);
+}

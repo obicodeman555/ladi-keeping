@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../loading/Loading";
+import "./user-picker.css";
 
 const UserPicker = () => {
   //set an empty list of users as initial value
@@ -20,7 +21,7 @@ const UserPicker = () => {
     return <Loading />;
   }
   return (
-    <div className="margin-left-auto">
+    <div className="user-select__block">
       <select name="" id="">
         {users.map((user) => (
           <option key={user.id}>{user.name}</option>
