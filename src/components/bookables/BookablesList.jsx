@@ -6,6 +6,7 @@ import reducer from "../../reducers/bookableReducer";
 import getData from "../../utils/api";
 import Loading from "../loading/Loading";
 import "./bookables-list.css";
+import errorImage from "../assets/imgs/error-image.png";
 
 const { sessions, days } = data;
 
@@ -116,7 +117,22 @@ const BookablesList = () => {
   };
 
   if (error) {
-    return <p>{error.message}</p>;
+    return (
+      <article className="error__block">
+        <div className="flex-container direction-column align-center">
+          <h2>Something went wrong!!</h2>
+          <p>Server taking time to send data to application</p>
+          <div>
+            <span>
+              <img
+                src={errorImage}
+                alt="This represent a 404 response user interface"
+              />
+            </span>
+          </div>
+        </div>
+      </article>
+    );
   }
 
   if (isLoading) {
