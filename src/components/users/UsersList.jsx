@@ -46,8 +46,8 @@ const UsersList = () => {
   const user = users[userIndex];
 
   return (
-    <section className="flex-container">
-      <ul>
+    <section className="flex-container algn-start ladi-keeping__users-list-block">
+      <ul className="flex-30">
         {users.map((user, index) => (
           <li className={index === userIndex ? "selected" : ""} key={user.id}>
             <button
@@ -61,11 +61,11 @@ const UsersList = () => {
         ))}
       </ul>
       {user && (
-        <div className="user-details w-100 margin-left-3">
-          <div className="header">
+        <div className="ladi-keeping__users-details flex-70">
+          <div className="user-details__name">
             <h2>{user.name}</h2>
           </div>
-          <div>
+          <div className="user-details__more-info">
             <h4>{user.title}</h4>
             <p>{user.notes}</p>
           </div>

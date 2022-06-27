@@ -5,6 +5,7 @@ import { getUniqueValues } from "../../utils/get-unqiue-values";
 import reducer from "../../reducers/bookableReducer";
 import getData from "../../utils/api";
 import Loading from "../loading/Loading";
+import "./bookables-list.css";
 
 const { sessions, days } = data;
 
@@ -123,20 +124,22 @@ const BookablesList = () => {
   }
 
   return (
-    <main className="flex-container">
-      <div>
-        <select value={group} onChange={changeGroup}>
-          {groups.map((g) => (
-            <option value={g} key={g}>
-              {g}
-            </option>
-          ))}
-        </select>
-        <ul className="bookable-list flex-container direction-column align-center">
+    <section className="flex-container algn-start">
+      <div className="bookables-list__group flex-30">
+        <div className="flex-container j-ctr bookables-list__select-block">
+          <select value={group} onChange={changeGroup}>
+            {groups.map((g) => (
+              <option value={g} key={g}>
+                {g}
+              </option>
+            ))}
+          </select>
+        </div>
+        <ul className="bookable-list">
           {bookablesInGroup.map((b, i) => (
             <li key={b.title} className={i === bookableIndex ? "selected" : ""}>
               <button
-                className="btn"
+                className=""
                 type="button"
                 onClick={() => changeBookable(i)}
               >
@@ -144,20 +147,23 @@ const BookablesList = () => {
               </button>
             </li>
           ))}
-          <div>
-            <button type="button" onClick={nextBookable} autoFocus>
-              <span>
-                <FaArrowRight />
-                <span>Next</span>
-              </span>
+          <div className="bookable-list__next-button flex-container j-ctr">
+            <button
+              type="button"
+              onClick={nextBookable}
+              autoFocus
+              className="flex-container align-center"
+            >
+              <span className="">Next</span>
+              <FaArrowRight />
             </button>
           </div>
         </ul>
       </div>
       {bookable && (
-        <div className="bookable-details margin-left-3 w-100">
+        <div className="bookable-list__details flex-70">
           <div className="item">
-            <div className="item-header flex-container align-center bg-color-blue padding-md">
+            <div className="bookable-list__details__header flex-container align-center bg-color-blue padding-md">
               <h2 className="color-white">{bookable.title}</h2>
               <span className="controls margin-left-auto">
                 <label className="color-white">
@@ -170,9 +176,10 @@ const BookablesList = () => {
                 </label>
               </span>
             </div>
-            <p>{bookable.notes}</p>
+
             {hasDetails && (
-              <div className="item-details">
+              <div className="bookable-list__details__content">
+                <p>{bookable.notes}</p>
                 <h3>Availability</h3>
                 <div className="bookable-availability">
                   <ul>
@@ -191,7 +198,7 @@ const BookablesList = () => {
           </div>
         </div>
       )}
-    </main>
+    </section>
   );
 };
 

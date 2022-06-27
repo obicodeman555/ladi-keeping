@@ -1,9 +1,29 @@
 :root {
-  --bg-white: #f2f5f7;
+  --bg-white: #f0f2f5;
+  --color-white: #fff;
+  --color-lavender: #dbeafe;
   --primary-color: #003580;
-  --primary-color-varaint: #1a4a8d;
-  --font-size-sm: 1.4em;
-  --font-size-lg: 3em;
+  --text-blue: #0071c2;
+  --primary-color-variant: #1a4a8d;
+  --font-size-sm: 1.6rem;
+  --font-size-smx: 1.4rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 30rem;
+  --font-size-lg-end: 4.8rem;
+  --container-max-width: 1140px;
+  --top-spacing-sm: 2rem;
+  --priamry-color-lighten: rgba(0, 113, 194, 0.06);
+  --transparent-white: rgba(255, 255, 255, 0.1);
+  --side-spacing-sm: 0.75rem;
+  --side-spacing-md: 1.25rem;
+  --side-spacing-md-variant: 1.75rem;
+  --primary-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container {
@@ -14,31 +34,35 @@
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
-}
-.justify-space-btw {
-  justify-content: space-between;
-}
-
 .align-center {
   align-items: center;
 }
 
-.padding-sm {
-  padding: 0.5rem;
+.algn-start {
+  align-items: start;
 }
 
-.padding-md {
-  padding: 1rem;
+.j-ctr {
+  justify-content: center;
+}
+.j-sp-btw {
+  justify-content: space-between;
 }
 
-.padding-md-2 {
-  padding: 1.25rem;
+.flex-30 {
+  flex: 30%;
+}
+.flex-70 {
+  flex: 70%;
 }
 
-.padding-md-3 {
-  padding: 1.5rem;
+.container-padding-lg {
+  padding: 2.5rem;
+}
+
+.block-padding-sm {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .margin-left-auto {
@@ -48,8 +72,11 @@
   margin-right: auto;
 }
 
-.margin-left-3 {
-  margin-left: 3rem;
+.margin-inline-start-1 {
+  margin-left: var(--side-spacing-sm);
+}
+.margin-inline-end-1 {
+  margin-right: var(--side-spacing-sm);
 }
 
 .color-white {
@@ -74,43 +101,36 @@
   font-weight: 600;
 }
 
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
 .margin-block-end {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/*Component styles*/
-
-.btn {
-  border: 1px solid hsl(170, 100%, 49%);
-  outline: none;
-  background-color: #fff;
-  padding: 0.5rem;
-  width: 150px;
-  border-radius: 30px;
+.capitalize-text {
+  text-transform: capitalize;
 }
-
-.btn-header {
-  background-color: rgb(22, 22, 22);
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.65px;
-}
-.btn-header > span {
-  margin-left: 0.5rem;
-}
-
 .w-100 {
   width: 100%;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-100vh {
+  height: 100vh;
 }
 
 .card {
   background-color: var(--bg-white);
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
   border-radius: 0.25rem;
+}
+
+.check-border {
+  border: 1px solid red;
 }

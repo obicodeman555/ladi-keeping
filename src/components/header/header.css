@@ -1,0 +1,12 @@
+.ladi-keeping-app__header {
+  background-color: var(--primary-color);
+}
+
+.ladi-keeping-app__header-links {
+  margin-top: var(--top-spacing-sm);
+  margin-bottom: var(--top-spacing-sm);
+}
+
+.ladi-keeping-app__header-links li:not(:first-child) {
+  margin-left: var(--side-spacing-sm);
+}

@@ -1,0 +1,15 @@
+.booking__intro-text {
+  padding-top: var(--side-spacing-md-variant);
+  padding-bottom: var(--side-spacing-md-variant);
+}
+
+.booking__intro-text > h1 {
+  font-size: var(--font-size-lg-end);
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.booking__intro-text > p {
+  font-size: var(--font-size-md);
+  margin-top: var(--side-spacing-sm);
+}
